@@ -856,40 +856,135 @@
 
 
 
-let $img = document.querySelector('#current');
-let $left = document.querySelector('#left');
-let $right = document.querySelector('#right');
-let min_img = document.querySelectorAll('.smallImg img');
+// let $img = document.querySelector('#current');
+// let $left = document.querySelector('#left');
+// let $right = document.querySelector('#right');
+// let min_img = document.querySelectorAll('.smallImg img');
 
-let src_img = [];
-for (let i = 0; i < min_img.length; i++) {
-    src_img[i] = min_img[i].getAttribute('src')
-}
-let i = 0;
-$left.addEventListener('click',() =>{
-    i--;
-    if(i < 0) i = src_img.length - 1;
-    $img.src = src_img[i];
-} )
+// let src_img = [];
+// for (let i = 0; i < min_img.length; i++) {
+//     src_img[i] = min_img[i].getAttribute('src')
+// }
+// let i = 0;
+// $left.addEventListener('click',() =>{
+//     i--;
+//     if(i < 0) i = src_img.length - 1;
+//     $img.src = src_img[i];
+// } )
 
-$right.addEventListener('click',() =>{
-   i++;
-   if(i == src_img.length) i = 0;
-   $img.src = src_img[i];
+// $right.addEventListener('click',() =>{
+//    i++;
+//    if(i == src_img.length) i = 0;
+//    $img.src = src_img[i];
     
-} )
+// } )
 
-for (let j = 0; j < min_img.length; j++) {
-    min_img[j].addEventListener('click', () =>{
-        $img.src = src_img[j]
-        i = j;
-    } )
-    min_img[j].addEventListener('mouseenter', () =>{
-        min_img[j].style.transform = 'scale(1.2)';
-        min_img[j].style.opacity = '1';
-    } )
-    min_img[j].addEventListener('mouseleave', () =>{
-        min_img[j].style.transform = 'scale(1)';
-        min_img[j].style.opacity = '.7';
-    } )
-}
+// for (let j = 0; j < min_img.length; j++) {
+//     min_img[j].addEventListener('click', () =>{
+//         $img.src = src_img[j]
+//         i = j;
+//     } )
+//     min_img[j].addEventListener('mouseenter', () =>{
+//         min_img[j].style.transform = 'scale(1.2)';
+//         min_img[j].style.opacity = '1';
+//     } )
+//     min_img[j].addEventListener('mouseleave', () =>{
+//         min_img[j].style.transform = 'scale(1)';
+//         min_img[j].style.opacity = '.7';
+//     } )
+// }
+
+
+// let name = document.querySelector('input[type="text"]')
+// let btn = document.querySelector('input[type="submit"]')
+// let pas = document.querySelector('input[type="password"]')
+// let check = document.querySelector('input[type="checkbox"]')
+// let p = document.querySelector('.name')
+
+// let ch = document.querySelectorAll('input[type = "checkbox"]');
+
+// for(let i = 0; i < ch.length; i++){
+//     ch[i].addEventListener('change',()=>{
+//         if(ch[i].checked){
+//             console.log(ch[i].nextElementSibling.textContent)
+//         }
+//     }
+//     )
+// }
+
+
+
+// let color = document.querySelector('.input')
+// color.addEventListener('change',()=>{
+//     document.body.backround = color.value 
+// })
+
+
+// let btn = document.querySelector('input');
+// let div = document.querySelector('div');
+
+// console.log(getComputedStyle(div))
+
+// btn.addEventListener('dblclick',()=>{
+//     div.style.backgroundColor = 'gold';
+// })
+
+// btn.addEventListener('click',()=>{
+//     let n = btn.nextElementSibling;
+//     n.style.color = 'green'
+// })
+
+
+
+
+/////////////11111111111111111111
+
+// let h1 = document.querySelector('h1')
+
+// let btn = document.querySelector('input')
+
+// btn.addEventListener('click',()=>{
+//     h1.innerHTML = parseInt(Math.random()*100)
+// })
+
+
+//////////////333333333333333
+
+// let p = document.querySelector('p')
+// let btn = document.querySelector('button')
+
+// btn.addEventListener('click',()=>{
+//     if(p.style.display == 'block'){
+//         p.style.display = 'none'
+//     }else if(p.style.display == 'none'){
+//         p.style.display = 'block'
+//     }
+//
+
+
+
+////////////////44444444444444
+
+let html = document.querySelector('div button:nth-child(1)')
+let css = document.querySelector('div button:nth-child(2)')
+let js = document.querySelector('div button:nth-child(3)')
+
+let p = document.querySelector('div p:nth-child(1)')
+let pHtml = document.querySelector('div p:nth-child(2)')
+let pCss = document.querySelector('div p:nth-child(3)')
+let pJs = document.querySelector('div p:nth-child(4)')
+
+
+
+html.addEventListener('click',()=>{
+    p.innerHTML = pHtml
+    p.style.displey = 'block'
+})
+
+css.addEventListener('click',()=>{
+    p.innerHTML = pCss
+})
+
+js.addEventListener('click',()=>{
+    p.innerHTML = pJs
+})
