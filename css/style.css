@@ -1,0 +1,50 @@
+body{
+    background-color: #000;
+
+}
+.container{
+    width: 820px;
+    margin: 0 auto;
+}
+.largeImg{
+    border: solid #fff 10px;
+    border-radius: 25px;
+    position: relative;
+}
+#current{
+    display: block;
+    border-radius: 15px;
+    width: 100%;
+}
+#left, #right{
+    position: absolute;
+    top: 50%;
+    margin-top: -35px;
+    height: 70px;
+    opacity: 0.4;
+    cursor: pointer;
+}
+#left{
+    left: 5px;
+}
+#right{
+    right: 5px;
+}
+
+.smallImg{
+    text-align: center;
+    padding:15px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+    opacity: .5;
+
+}
+
+.smallImg img{
+    width: 100%;
+    border: solid #fff 3px;
+    cursor: pointer;
+    transition: 1s;
+}
