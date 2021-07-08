@@ -1,58 +1,73 @@
-/* body{
-    background-color: #000;
 
-}
-.container{
-    width: 820px;
-    margin: 0 auto;
-}
-.largeImg{
-    border: solid #fff 10px;
-    border-radius: 25px;
-    position: relative;
-}
-#current{
-    display: block;
-    border-radius: 15px;
-    width: 100%;
-}
-#left, #right{
-    position: absolute;
-    top: 50%;
-    margin-top: -35px;
-    height: 70px;
-    opacity: 0.4;
-    cursor: pointer;
-}
-#left{
-    left: 5px;
-}
-#right{
-    right: 5px;
+.main{
+    margin: 90px auto;
+    margin-bottom: 10px;
+    width: 80%;
+    border: blue 6px double;
+    border-radius: 5px;
+    padding: 10px;
 }
 
-.smallImg{
+div h2{
     text-align: center;
-    padding:15px 0;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 20px;
-    padding: 20px;
-    opacity: .5;
-
+    color: blue;
 }
 
-.smallImg img{
+
+div img{
+    width: 40%;
+    float: left;
+    padding: 10px;
+}
+
+div p{
+    color: blue;
+}
+
+.color , .bord , .font{
+    text-align: center;
+    margin: 10px;
+}
+
+
+button{
+    text-align: center;
+    background-color: thistle;
+}
+ 
+
+
+
+/* task 2222 */
+
+/* 
+.main{
+    margin: 0 auto;
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.main div{
+   margin: 2px;
+}
+
+img{
     width: 100%;
-    border: solid #fff 3px;
-    cursor: pointer;
-    transition: 1s;
+}
+
+button{
+    width: 100%;
 } */
 
 
 
-div{
-    text-align: center;
-    margin: 90px auto;
-    width: 40%;
-}
+/* task 11111 */
+
+/* 
+
+p{
+    padding: 15px;
+    height: 100px;
+    margin: 60px auto;
+    width: 70%;
+} */

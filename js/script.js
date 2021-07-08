@@ -965,26 +965,224 @@
 
 ////////////////44444444444444
 
-let html = document.querySelector('div button:nth-child(1)')
-let css = document.querySelector('div button:nth-child(2)')
-let js = document.querySelector('div button:nth-child(3)')
+// let html = document.querySelector('div button:nth-child(1)')
+// let css = document.querySelector('div button:nth-child(2)')
+// let js = document.querySelector('div button:nth-child(3)')
 
-let p = document.querySelector('div p:nth-child(1)')
-let pHtml = document.querySelector('div p:nth-child(2)')
-let pCss = document.querySelector('div p:nth-child(3)')
-let pJs = document.querySelector('div p:nth-child(4)')
+// let p = document.querySelector('div p:nth-child(1)')
+// let pHtml = document.querySelector('div p:nth-child(2)')
+// let pCss = document.querySelector('div p:nth-child(3)')
+// let pJs = document.querySelector('div p:nth-child(4)')
 
 
 
-html.addEventListener('click',()=>{
-    p.innerHTML = pHtml
-    p.style.displey = 'block'
+// html.addEventListener('click',()=>{
+//     p.innerHTML = pHtml
+//     p.style.displey = 'block'
+// })
+
+// css.addEventListener('click',()=>{
+//     p.innerHTML = pCss
+// })
+
+// js.addEventListener('click',()=>{
+//     p.innerHTML = pJs
+// })
+
+
+
+
+
+// task 3333
+
+
+
+let color = document.querySelectorAll('.color button');
+let bord = document.querySelectorAll('.bord button');
+let font = document.querySelectorAll('.font button');
+let p = document.querySelectorAll('p')
+let border = document.querySelector('.main')
+let h2 = document.querySelector('h2')
+
+
+color[0].addEventListener('click',()=>{
+    for (let i = 0; i < p.length; i++) {
+        p[i].style.color = 'black';
+    }
+    h2.style.color = 'black';
+    border.style.borderColor = 'black';
+})
+color[1].addEventListener('click',()=>{
+    for (let i = 0; i < p.length; i++) {
+        p[i].style.color = 'blue';
+    }
+    h2.style.color = 'blue';
+    border.style.borderColor = 'blue';
+})
+color[2].addEventListener('click',()=>{
+    for (let i = 0; i < p.length; i++) {
+        p[i].style.color = 'red';
+    }
+    h2.style.color = 'red';
+    border.style.borderColor = 'red';
+})
+color[3].addEventListener('click',()=>{
+    for (let i = 0; i < p.length; i++) {
+        p[i].style.color = 'yellowgreen'
+    }
+    h2.style.color = 'yellowgreen';
+    border.style.borderColor = 'yellowgreen';
+})
+color[4].addEventListener('click',()=>{
+    for (let i = 0; i < p.length; i++) {
+        p[i].style.color = 'green';
+    }
+    h2.style.color = 'green';
+    border.style.borderColor = 'green';
+})
+color[5].addEventListener('click',()=>{
+    for (let i = 0; i < p.length; i++) {
+        p[i].style.color = 'orange';
+    }
+    h2.style.color = 'orange';
+    border.style.borderColor = 'orange';
 })
 
-css.addEventListener('click',()=>{
-    p.innerHTML = pCss
+
+//                 bord
+
+bord[0].addEventListener('click',()=>{
+    border.style.borderStyle = 'solid ';
+})
+bord[1].addEventListener('click',()=>{
+    border.style.borderStyle = 'dashed';
+})
+bord[2].addEventListener('click',()=>{
+    border.style.borderStyle = 'dotted';
+})
+bord[3].addEventListener('click',()=>{
+    border.style.borderStyle = 'double';
+})
+bord[4].addEventListener('click',()=>{
+    border.style.borderStyle = 'inset';
+})
+bord[5].addEventListener('click',()=>{
+    border.style.borderStyle = 'outset';
 })
 
-js.addEventListener('click',()=>{
-    p.innerHTML = pJs
+
+//                  font
+
+font[0].addEventListener('click',()=>{
+    for (let i = 0; i < p.length; i++) {
+        p[i].style.fontFamily = 'serif'
+        
+    }
 })
+font[1].addEventListener('click',()=>{
+    for (let i = 0; i < p.length; i++) {
+        p[i].style.fontFamily = 'sans-serif'
+        
+    }
+})
+font[2].addEventListener('click',()=>{
+    for (let i = 0; i < p.length; i++) {
+        p[i].style.fontFamily = 'monotype'
+        
+    }
+})
+font[3].addEventListener('click',()=>{
+    for (let i = 0; i < p.length; i++) {
+        p[i].style.fontFamily = 'Monotype Corsiva'
+        
+    }
+})
+font[4].addEventListener('click',()=>{
+    for (let i = 0; i < p.length; i++) {
+        p[i].style.fontFamily = 'Ampir Deco'
+        
+    }
+})
+font[5].addEventListener('click',()=>{
+    for (let i = 0; i < p.length; i++) {
+        p[i].style.fontFamily = 'Impact'
+        
+    }
+})
+
+
+
+
+// task 22222
+
+
+// let btn = document.querySelectorAll('button')
+
+
+// btn[0].addEventListener('click',()=>{
+//     let op = prompt('опис картинки')
+//     btn[0].innerHTML = op
+// })
+// btn[2].addEventListener('click',()=>{
+//     let op = prompt('опис картинки')
+//     btn[2].innerHTML = op
+// })
+// btn[1].addEventListener('click',()=>{
+//     let op = prompt('опис картинки')
+//     btn[1].innerHTML = op
+// })
+// btn[3].addEventListener('click',()=>{
+//     let op = prompt('опис картинки')
+//     btn[3].innerHTML = op
+// })
+
+
+
+
+//                   TASK 1111
+
+
+
+// let p = document.querySelectorAll('p');
+
+
+// p[0].addEventListener('mouseenter', ()=>{
+//     p[0].style.backgroundColor = '#666701';
+//     p[0].style.color = 'white';
+//     p[0].style.backgroundImage = 'url(img/quots.png)'; 
+//     p[0].style.backgroundRepeat = 'no-repeat'
+//     p[0].style.backgroundPosition = 'right'
+// })
+// p[1].addEventListener('mouseenter', ()=>{
+//     p[1].style.backgroundColor = '#666701';
+//     p[1].style.color = 'white';
+//     p[1].style.backgroundImage = 'url(img/quots.png)'; 
+//     p[1].style.backgroundRepeat = 'no-repeat' 
+//     p[1].style.backgroundPosition = 'right'
+// })
+// p[2].addEventListener('mouseenter', ()=>{
+//     p[2].style.backgroundColor = '#666701';
+//     p[2].style.color = 'white';
+//     p[2].style.backgroundImage = 'url(img/quots.png)'; 
+//     p[2].style.backgroundRepeat = 'no-repeat' 
+//     p[2].style.backgroundPosition = 'right'
+// })
+
+// p[0].addEventListener('mouseleave', ()=>{
+//     p[0].style.backgroundColor = 'white';
+//     p[0].style.color = 'black'; 
+//     p[0].style.backgroundImage = 'none'; 
+//     p[0].style.backgroundRepeat = 'no-repeat'
+// })
+// p[1].addEventListener('mouseleave', ()=>{
+//     p[1].style.backgroundColor = 'white';
+//     p[1].style.color = 'black'; 
+//     p[1].style.backgroundImage = 'none'; 
+//     p[1].style.backgroundRepeat = 'no-repeat'
+// })
+// p[2].addEventListener('mouseleave', ()=>{
+//     p[2].style.backgroundColor = 'white';
+//     p[2].style.color = 'black'; 
+//     p[2].style.backgroundImage = 'none'; 
+//     p[2].style.backgroundRepeat = 'no-repeat'
+// })
