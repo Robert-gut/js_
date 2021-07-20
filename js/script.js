@@ -997,118 +997,118 @@
 
 
 
-let color = document.querySelectorAll('.color button');
-let bord = document.querySelectorAll('.bord button');
-let font = document.querySelectorAll('.font button');
-let p = document.querySelectorAll('p')
-let border = document.querySelector('.main')
-let h2 = document.querySelector('h2')
+// let color = document.querySelectorAll('.color button');
+// let bord = document.querySelectorAll('.bord button');
+// let font = document.querySelectorAll('.font button');
+// let p = document.querySelectorAll('p')
+// let border = document.querySelector('.main')
+// let h2 = document.querySelector('h2')
 
 
-color[0].addEventListener('click',()=>{
-    for (let i = 0; i < p.length; i++) {
-        p[i].style.color = 'black';
-    }
-    h2.style.color = 'black';
-    border.style.borderColor = 'black';
-})
-color[1].addEventListener('click',()=>{
-    for (let i = 0; i < p.length; i++) {
-        p[i].style.color = 'blue';
-    }
-    h2.style.color = 'blue';
-    border.style.borderColor = 'blue';
-})
-color[2].addEventListener('click',()=>{
-    for (let i = 0; i < p.length; i++) {
-        p[i].style.color = 'red';
-    }
-    h2.style.color = 'red';
-    border.style.borderColor = 'red';
-})
-color[3].addEventListener('click',()=>{
-    for (let i = 0; i < p.length; i++) {
-        p[i].style.color = 'yellowgreen'
-    }
-    h2.style.color = 'yellowgreen';
-    border.style.borderColor = 'yellowgreen';
-})
-color[4].addEventListener('click',()=>{
-    for (let i = 0; i < p.length; i++) {
-        p[i].style.color = 'green';
-    }
-    h2.style.color = 'green';
-    border.style.borderColor = 'green';
-})
-color[5].addEventListener('click',()=>{
-    for (let i = 0; i < p.length; i++) {
-        p[i].style.color = 'orange';
-    }
-    h2.style.color = 'orange';
-    border.style.borderColor = 'orange';
-})
+// color[0].addEventListener('click',()=>{
+//     for (let i = 0; i < p.length; i++) {
+//         p[i].style.color = 'black';
+//     }
+//     h2.style.color = 'black';
+//     border.style.borderColor = 'black';
+// })
+// color[1].addEventListener('click',()=>{
+//     for (let i = 0; i < p.length; i++) {
+//         p[i].style.color = 'blue';
+//     }
+//     h2.style.color = 'blue';
+//     border.style.borderColor = 'blue';
+// })
+// color[2].addEventListener('click',()=>{
+//     for (let i = 0; i < p.length; i++) {
+//         p[i].style.color = 'red';
+//     }
+//     h2.style.color = 'red';
+//     border.style.borderColor = 'red';
+// })
+// color[3].addEventListener('click',()=>{
+//     for (let i = 0; i < p.length; i++) {
+//         p[i].style.color = 'yellowgreen'
+//     }
+//     h2.style.color = 'yellowgreen';
+//     border.style.borderColor = 'yellowgreen';
+// })
+// color[4].addEventListener('click',()=>{
+//     for (let i = 0; i < p.length; i++) {
+//         p[i].style.color = 'green';
+//     }
+//     h2.style.color = 'green';
+//     border.style.borderColor = 'green';
+// })
+// color[5].addEventListener('click',()=>{
+//     for (let i = 0; i < p.length; i++) {
+//         p[i].style.color = 'orange';
+//     }
+//     h2.style.color = 'orange';
+//     border.style.borderColor = 'orange';
+// })
 
 
-//                 bord
+// //                 bord
 
-bord[0].addEventListener('click',()=>{
-    border.style.borderStyle = 'solid ';
-})
-bord[1].addEventListener('click',()=>{
-    border.style.borderStyle = 'dashed';
-})
-bord[2].addEventListener('click',()=>{
-    border.style.borderStyle = 'dotted';
-})
-bord[3].addEventListener('click',()=>{
-    border.style.borderStyle = 'double';
-})
-bord[4].addEventListener('click',()=>{
-    border.style.borderStyle = 'inset';
-})
-bord[5].addEventListener('click',()=>{
-    border.style.borderStyle = 'outset';
-})
+// bord[0].addEventListener('click',()=>{
+//     border.style.borderStyle = 'solid ';
+// })
+// bord[1].addEventListener('click',()=>{
+//     border.style.borderStyle = 'dashed';
+// })
+// bord[2].addEventListener('click',()=>{
+//     border.style.borderStyle = 'dotted';
+// })
+// bord[3].addEventListener('click',()=>{
+//     border.style.borderStyle = 'double';
+// })
+// bord[4].addEventListener('click',()=>{
+//     border.style.borderStyle = 'inset';
+// })
+// bord[5].addEventListener('click',()=>{
+//     border.style.borderStyle = 'outset';
+// })
 
 
-//                  font
+// //                  font
 
-font[0].addEventListener('click',()=>{
-    for (let i = 0; i < p.length; i++) {
-        p[i].style.fontFamily = 'serif'
+// font[0].addEventListener('click',()=>{
+//     for (let i = 0; i < p.length; i++) {
+//         p[i].style.fontFamily = 'serif'
         
-    }
-})
-font[1].addEventListener('click',()=>{
-    for (let i = 0; i < p.length; i++) {
-        p[i].style.fontFamily = 'sans-serif'
+//     }
+// })
+// font[1].addEventListener('click',()=>{
+//     for (let i = 0; i < p.length; i++) {
+//         p[i].style.fontFamily = 'sans-serif'
         
-    }
-})
-font[2].addEventListener('click',()=>{
-    for (let i = 0; i < p.length; i++) {
-        p[i].style.fontFamily = 'monotype'
+//     }
+// })
+// font[2].addEventListener('click',()=>{
+//     for (let i = 0; i < p.length; i++) {
+//         p[i].style.fontFamily = 'monotype'
         
-    }
-})
-font[3].addEventListener('click',()=>{
-    for (let i = 0; i < p.length; i++) {
-        p[i].style.fontFamily = 'Monotype Corsiva'
+//     }
+// })
+// font[3].addEventListener('click',()=>{
+//     for (let i = 0; i < p.length; i++) {
+//         p[i].style.fontFamily = 'Monotype Corsiva'
         
-    }
-})
-font[4].addEventListener('click',()=>{
-    for (let i = 0; i < p.length; i++) {
-        p[i].style.fontFamily = 'Ampir Deco'
+//     }
+// })
+// font[4].addEventListener('click',()=>{
+//     for (let i = 0; i < p.length; i++) {
+//         p[i].style.fontFamily = 'Ampir Deco'
         
-    }
-})
-font[5].addEventListener('click',()=>{
-    for (let i = 0; i < p.length; i++) {
-        p[i].style.fontFamily = 'Impact'
+//     }
+// })
+// font[5].addEventListener('click',()=>{
+//     for (let i = 0; i < p.length; i++) {
+//         p[i].style.fontFamily = 'Impact'
         
-    }
-})
+//     }
+// })
 
 
 
@@ -1186,3 +1186,116 @@ font[5].addEventListener('click',()=>{
 //     p[2].style.backgroundImage = 'none'; 
 //     p[2].style.backgroundRepeat = 'no-repeat'
 // })
+
+
+
+
+
+// let Car = function(create = "none", model = "none", year = 1932, speed = 120){
+//     this.create = create;
+//     this.model = model;
+//     this.year = year;
+//     this.speed = speed;
+//     this.getTime = function(distance){
+//         let tt = parseInt(distance / this.speed);
+//         tt += parseInt(tt/4);
+//         return tt;
+//     }
+// } 
+
+// let ford = new Car("Ford","Ford", 1992, 60);
+// let bmw = new Car("BMW","BMW", 1992, 60);
+// Car.prototype.color = 'black';
+// Car.prototype.getAge = function(){
+//     return new Date().getFullYear() - this.year;
+// }
+// bmw.color = 'red';
+// console.log(ford);
+// console.log(bmw);
+
+
+// let person = Object.create({
+//     getInitials: function(){
+//         Object.defineProperty(this,'initials',{
+//             value: this.surname + ' ' +this.name[0].toString().toUpperCase() +'.',
+//             enumerable:true,
+//             writable:true
+//         })
+//     }
+// },{
+//     name:{
+//         value:'Sasha',
+//         writable:false,
+//         enumerable:true,
+//         configurable:false
+//     },
+//     year:{
+//         value: 2005,
+//         writable:true,
+//         enumerable:true,
+//         configurable:false
+//     },
+//     surname:{
+//         value: 'Ivanov',
+//         writable:true,
+//         enumerable:true,
+//         configurable:false
+//     },
+//     age:{
+//         enumerable:true,
+//         get:function(){
+//             console.log('отримали результат')
+//             return new Date().getFullYear() - this.year;
+//         },
+//         get:function(){
+//             console.log('нове значення');
+//         }
+//     }
+// })
+
+// for (const key in person) {
+//     if (person.hasOwnProperty[key]) {
+//         console.log(`${key} : ${person[key]};`)
+//     }
+// }
+
+// console.log(persone.getAge())
+
+
+// let n = new Date(2020,10,14);
+// console.log(n);
+
+
+
+
+
+
+
+
+let contactUs = {}
+let ok = document.querySelector('button')
+let input = document.querySelectorAll('input') 
+
+ok.addEventListener('click',()=>{
+    for (let i = 0; i < input.length; i++) {
+        contactUs[input[i].getAttribute('name')] = input[i].value;
+    }
+    for (let i = 0; i < contactUs.EmailAddress.length; i++) {
+       if(contactUs.EmailAddress.indexOf('@') == -1){
+            input[2].style.borderColor = 'red'
+       }else{
+            input[2].style.borderColor = 'green'
+       }
+    }
+    for (let i = 0; i < contactUs.Password.length; i++) {
+        if(contactUs.Password[i] == contactUs.ConfirmPassword[i]){
+            input[8].style.borderColor = 'green'
+            input[10].style.borderColor = 'green'
+        }else{
+            input[8].style.borderColor = 'red'
+            input[10].style.borderColor = 'red'
+        }
+        
+    }
+    console.log(contactUs.EmailAddress)
+})

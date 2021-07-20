@@ -1,73 +1,9 @@
-
-.main{
-    margin: 90px auto;
-    margin-bottom: 10px;
-    width: 80%;
-    border: blue 6px double;
-    border-radius: 5px;
-    padding: 10px;
-}
-
-div h2{
-    text-align: center;
-    color: blue;
-}
-
-
-div img{
-    width: 40%;
-    float: left;
-    padding: 10px;
-}
-
-div p{
-    color: blue;
-}
-
-.color , .bord , .font{
-    text-align: center;
-    margin: 10px;
-}
-
-
-button{
-    text-align: center;
-    background-color: thistle;
-}
- 
-
-
-
-/* task 2222 */
-
-/* 
-.main{
-    margin: 0 auto;
-    width: 60%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-.main div{
-   margin: 2px;
-}
-
-img{
+input{
     width: 100%;
+    margin-bottom: 2%;
+    color:#302f2f;
 }
 
-button{
-    width: 100%;
-} */
-
-
-
-/* task 11111 */
-
-/* 
-
-p{
-    padding: 15px;
-    height: 100px;
-    margin: 60px auto;
-    width: 70%;
-} */
+h3{
+    color: #696767;
+}
