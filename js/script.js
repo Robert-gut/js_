@@ -1272,30 +1272,132 @@
 
 
 
-let contactUs = {}
-let ok = document.querySelector('button')
-let input = document.querySelectorAll('input') 
+// let contactUs = {}
+// let ok = document.querySelector('button')
+// let input = document.querySelectorAll('input') 
 
-ok.addEventListener('click',()=>{
-    for (let i = 0; i < input.length; i++) {
-        contactUs[input[i].getAttribute('name')] = input[i].value;
-    }
-    for (let i = 0; i < contactUs.EmailAddress.length; i++) {
-       if(contactUs.EmailAddress.indexOf('@') == -1){
-            input[2].style.borderColor = 'red'
-       }else{
-            input[2].style.borderColor = 'green'
-       }
-    }
-    for (let i = 0; i < contactUs.Password.length; i++) {
-        if(contactUs.Password[i] == contactUs.ConfirmPassword[i]){
-            input[8].style.borderColor = 'green'
-            input[10].style.borderColor = 'green'
-        }else{
-            input[8].style.borderColor = 'red'
-            input[10].style.borderColor = 'red'
-        }
+// ok.addEventListener('click', () => {
+//     let num = 0
+//     for (let i = 0; i < input.length; i++) {
+//         contactUs[input[i].getAttribute('name')] = input[i].value;
+//     }
+//     for (let i = 0; i < contactUs.EmailAddress.length; i++) {
+//        if(contactUs.EmailAddress.indexOf('@') != -1 ){
+//            input[2].style.borderColor = 'green'
+//        }else{
+//             input[2].style.borderColor = 'red'
+//        }
+//     }
+//     for (let i = 0; i < contactUs.Password.length; i++) {
+//         if(contactUs.Password[i] == contactUs.ConfirmPassword[i] && contactUs.Password.length > 7 && contactUs.Password.length == contactUs.ConfirmPassword.length){
+//             input[8].style.borderColor = 'green'
+//             input[10].style.borderColor = 'green'
+//         }else{
+//             input[8].style.borderColor = 'red'
+//             input[10].style.borderColor = 'red'
+//         }
         
+//     }
+    
+//     if (input[2].style.borderColor == 'green' && input[8].style.borderColor == 'green') {
+//         alert('Привіт' + ' '+ contactUs.FirstName)
+//     }
+//     console.log(contactUs)
+// })
+
+
+
+
+
+// let person = {
+//     name: 'Sasha',
+//     age: 21,
+//     test:undefined
+// }
+// function check(key, value) {
+//     if (key === 'age' && value > 18) {
+//         return undefined
+//     }
+//     return value
+// }
+// console.log(person)
+
+// let text = JSON.stringify(person,check,10)
+// console.log('test' + text)
+
+// let obj = JSON.parse(text)
+// console.log(obj)
+
+
+
+
+let url = 'https://swapi.dev/api/people/1/'
+let res = new XMLHttpRequest()
+res.open('GET', url)
+res.send()
+res.onreadystatechange = function () {
+    console.log('readyState ', res.readyState)
+    if (res.readyState == 4) {
+        create(JSON.parse(res.responseText))
     }
-    console.log(contactUs.EmailAddress)
-})
+}
+
+
+function create(object) {
+    let ul = document.createElement('ul')
+
+    ul.style.background = '#000'
+    ul.style.listStyleType = 'none'
+    ul.style.padding = '0'
+    ul.style.width = '400px'
+    
+
+    let name = ['name','height','mass','hair_color','eye_color','films']
+    let li
+    for (let i = 0; i < 6; i++) {
+        li = document.createElement('li')
+        if (i == 0) {
+            styleHeader(li)
+            li.textContent = object[name[i]]
+        } else if (name[i] == 'films') {
+            let mas = object[name[i]]
+            li.textContent = name[i] + ' : '
+            styleList(li)
+            for (let j = 0; j < mas.length - 1; j++) {
+                films(mas[j],li)
+            }
+        } else {
+            styleList(li)
+            li.textContent = `${name[i]}  :   ${object[name[i]]}`
+        }
+        ul.insertAdjacentElement('beforeend',li)
+    }
+    document.body.insertAdjacentElement('afterbegin',ul)
+}
+function styleHeader(el) {
+    el.style.background = 'rgb(141,44,85)'
+    el.style.color = '#fff'
+    el.style.textAlign = 'center'
+    el.style.fontWeight = 'bold'
+    el.style.padding = '10px'
+    el.style.fontSize = '28px'
+
+}
+
+function styleList(el) {
+    el.style.borserBottom = 'solid #fff'
+    el.style.padding = '10px'
+    el.style.color = '#fff'
+}
+
+function films(url,li) {
+    let res = new XMLHttpRequest()
+    res.open('GET', url)
+    res.send()
+    res.onreadystatechange = function () {
+        console.log('readyState ', res.readyState)
+        if (res.readyState == 4) {
+            li.textContent += (JSON.parse(res.responseText)).title + ', '
+        }
+    }
+}
